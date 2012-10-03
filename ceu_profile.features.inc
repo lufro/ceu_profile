@@ -19,6 +19,13 @@ function ceu_profile_ctools_plugin_api() {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function ceu_profile_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function ceu_profile_node_info() {
@@ -28,7 +35,7 @@ function ceu_profile_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Full name (Last, First)'),
       'help' => '',
     ),
     'profile_faculty' => array(
@@ -36,7 +43,7 @@ function ceu_profile_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Full name (Last, First)'),
       'help' => '',
     ),
     'profile_phd' => array(
@@ -44,7 +51,7 @@ function ceu_profile_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Full name (Last, First)'),
       'help' => '',
     ),
     'profile_research_fellow' => array(
@@ -52,7 +59,7 @@ function ceu_profile_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Full name (Last, First)'),
       'help' => '',
     ),
     'profile_staff' => array(
@@ -60,7 +67,7 @@ function ceu_profile_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Full name (Last, First)'),
       'help' => '',
     ),
   );
